@@ -9,9 +9,7 @@ tasks:
     tar -xvf hugo_0.121.1_Linux-64bit.tar.gz
     sudo mv hugo /usr/bin/hugo
     rm hugo_0.121.1_Linux-64bit.tar.gz
-    hugo version
-    npm version
-    go version
+
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
   - name: Frontend
