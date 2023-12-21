@@ -5,3 +5,20 @@ image: gitpod/workspace-full:latest
 tasks:
   - name: Hugo Charles london hugo plate
  
+
+command: >
+  echo 'init script' # runs during prebuild =>
+  https://www.gitpod.io/docs/configure/projects/prebuilds;
+
+  curl -LO https://github.com/gohugoio/hugo/releases/download/v0.121.1/hugo_0.121.1_Linux-64bit.tar.gz;
+
+  tar -xvf hugo_0.121.1_Linux-64bit.tar.gz;
+
+  sudo mv hugo /usr/bin/hugo;
+
+  rm hugo_0.121.1_Linux-64bit.tar.gz;
+ports:
+  - name: Frontend
+    description: Port 3000 for the frontend
+    port: 3000
+    onOpen: open-preview
