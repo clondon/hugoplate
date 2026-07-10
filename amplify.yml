@@ -14,8 +14,8 @@ frontend:
         - sudo rm go1.20.5.linux-amd64.tar.gz
         - echo "GO 1.20.5 INSTALLED"
         - npm install
-        - ls -Rla
-        - cd ./themes/hugoplate/exampleSite
+        - ls -rl
+     
     build:
       commands:
         - npm run project-setup
