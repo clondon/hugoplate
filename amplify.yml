@@ -14,7 +14,7 @@ frontend:
         - sudo rm go1.20.5.linux-amd64.tar.gz
         - echo "GO 1.20.5 INSTALLED"
         - sudo yum install rsync -y
-        - rsync -av --remove-source-files .themes/hugoplate/exampleSite/ /
+        - rsync -av --remove-source-files ./themes/hugoplate/exampleSite/ /
         - npm install
         - ls -rl
      
